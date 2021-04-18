@@ -3,7 +3,6 @@ const API_KEY = 'GW3hpJE8TehFykMZzQQe0vqeOEdEeExX';
 const BASE_URL = 'https://dataservice.accuweather.com/';
 const DEFAULT_CITY_CODE = '215854';
 const DEFAULT_CITY_NAME = 'Tel Aviv';
-
 export const weatherService = {
   getCitiesCode,
   getWeather,
@@ -41,7 +40,7 @@ async function getForecast(cityCode = DEFAULT_CITY_CODE) {
     const res = await axios.get(
       `${BASE_URL}forecasts/v1/daily/5day/${cityCode}?apikey=${API_KEY}`
     );
-    const forecasts = _buildForecasts(res.data.DailyForecasts);
+    const forecasts = _buildForecast(res.data.DailyForecasts);
     return forecasts;
   } catch (err) {
     throw err;
@@ -65,7 +64,7 @@ function _buildWeather(weatherData) {
   };
 }
 
-function _buildForecasts(forecastsData) {
+function _buildForecast(forecastsData) {
   const cleanForecasts = forecastsData.map((forecast) => {
     const {
       Date: date,

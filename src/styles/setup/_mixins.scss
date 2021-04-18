@@ -83,7 +83,6 @@
 /* Media  Mixins */
 @mixin cardsList {
   list-style-type: none;
-  gap: rem(30px);
   box-shadow: 0 0 6px $color-shadow-list;
   padding: rem(20px) rem(10px);
   border-radius: rem(30px);
@@ -105,5 +104,9 @@
   letter-spacing: 1px;
   box-shadow: $box-shadow;
   animation: fadeIn 3s ease-out;
+  // >:not(:last-child){
+    
+    margin: 15px;
+  // }
 }
 

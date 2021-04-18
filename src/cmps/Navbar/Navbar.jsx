@@ -28,9 +28,9 @@ const Navbar = () => {
     
     return (
         <>
-        {isHamburgerMenu&&<i onClick={()=>setHamburgerMenuOpen(prevState=>!prevState)} className={`pi pi-${isHamburgerMenuOpen ? 'times' :'bars'} hamburger-icon`}></i>}
+        <i onClick={()=>setHamburgerMenuOpen(prevState=>!prevState)} className={`pi pi-${isHamburgerMenuOpen ? 'times' :'bars'} hamburger-icon`}></i>
         <nav className={`navbar ${isHamburgerMenu&& isHamburgerMenuOpen ? 'open-nav' :''}`}>
-        <ul className="main-nav flex gap align-center clean-list">
+        <ul className="main-nav flex  align-center clean-list">
         {links.map(({label,path,iconTxt},key)=><li key={key} className="nav-item"><Button className="p-button-raised p-button-info" badge={label==='Favorites' && favorites.length >=1 ? favorites.length+'' : null } icon={`pi ${iconTxt}`} label={label} onClick={()=>history.push(path)} /></li>)}
         {buttons.map(({Icon,label,value,func},key)=><li key={key} className="nav-item flex align-center" ><Icon /><InputSwitch  tooltip={label} tooltipOptions={{position: 'bottom'}} checked={value} onChange={() => dispatch(func(value))}/></li>)}
         </ul>

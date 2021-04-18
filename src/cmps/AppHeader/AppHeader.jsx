@@ -10,7 +10,7 @@ import {Link } from 'react-router-dom';
 const AppHeader = () => {
     return (
         <header className="app-header">
-            <div className="header-container flex align-center space-between">
+            <div className="header-container flex align-center relative space-between">
                 <Link to="/">
                 <Logo />
                 </Link>

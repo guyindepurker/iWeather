@@ -6,9 +6,9 @@ import './Logo.scss'
 const Logo = () => {
 
     return (
-        <div className="logo flex">
+        <div className="logo flex relative">
             <img src={logo} alt="logo" />
-            iWeather
+            <span>iWeather</span>
         </div>
     )
 

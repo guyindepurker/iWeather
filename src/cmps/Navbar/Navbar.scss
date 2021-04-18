@@ -1,7 +1,11 @@
 @import "./src/styles/setup";
 
 .navbar {
-      
+        .main-nav{
+        >*:not(:last-child){
+                margin-right: 15px;
+        }
+        }
         @include respond(mid-normal) {
 
                 position: fixed;
@@ -24,8 +28,11 @@
                         align-items: center;
                         justify-content: center;
                         height: 100%;
-                        gap: rem(20px);
-                     
+                        >*:not(:last-child){
+                                margin-right: 0;
+                                margin-bottom: 15px;
+                        }
+                        
                 }
         }
 
@@ -43,9 +50,17 @@
 }
 
 .hamburger-icon {
+      
         font-size: rem(22px) !important;
         color: $color-txt-primary;
-        z-index: 1000;
+       display: none !important;
         margin-left: rem(10px);
         cursor: pointer;
+        position: absolute;
+        z-index: 999899;
+        @include respond(mid-normal){display: block !important;
+                top: 25px;
+                right: 0;
+        
+        }
 }
