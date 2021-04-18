@@ -1,0 +1,8 @@
+export const SET_TOAST = 'SET_TOAST';
+export const SET_IS_DARK_MODE = 'SET_IS_DARK_MODE';
+export const SET_IS_FAHRENHEIT = 'SET_IS_FAHRENHEIT';
+export const SET_LOCATION = 'SET_LOCATION';
+export const SET_FORECAST = 'SET_FORECAST';
+export const SET_OPTIONS = 'SET_OPTIONS';
+export const ADD_FAVORITE = 'ADD_FAVORITE';
+export const REMOVE_FAVORITE = 'REMOVE_FAVORITE';

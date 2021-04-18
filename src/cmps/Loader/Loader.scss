@@ -1,0 +1,14 @@
+@import "./src/styles/setup";
+
+.loader-container {
+  min-height: 100%;
+
+  .loader-cmp {
+    border: rem(5px) solid $color-loader;
+    border-radius: 50%;
+    border-top: rem(5px) solid $color-black-header;
+    width: rem(50px);
+    height: rem(50px);
+    animation: spin 2s linear infinite;
+  }
+}

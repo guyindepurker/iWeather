@@ -1,0 +1,64 @@
+:root{
+    --bg-color-header:rgb(32 ,164, 197);
+    --color-blue:#2196F3;
+    --color-loader:#68a8bf;
+    --color-white:#fff;
+    --bg-site-color:#fff;
+    --color-black:#1a1a1a;
+    --txt-color-primary:#2d2d31;
+    --txt-color-secondary:#565658;
+    --color-box-shadow-header:#00000082;
+    --color-box-shadow-list:#0000001f;
+    --color-like:#ffec3d;
+    --color-unlike:lightcyan;
+    --color-black-dark:#000;
+    --color-bgc-card:radial-gradient(circle, #ccfffc, #ccfffc, #ccfffc, #ccfffc, #ccfffc, #c3faf9, #b9f6f6, #b0f1f4, #9be7ef, #86dcea, #6fd2e6, #57c7e3);
+    --color-bgc-location:radial-gradient(circle, #8fddf7, #a0e4f8, #b0eafa, #c0f1fc, #d0f7ff);
+}
+
+[data-theme="dark"]{
+    --color-black:#fff;
+    --bg-site-color:#202C37;
+    --txt-color-primary:#fff;
+    --bg-color-header:#2B3945;
+    --color-bgc-card:radial-gradient(circle, #2b3945, #283641, #25323e, #232f3a, #202c37);
+    --color-bgc-location:linear-gradient(to bottom, #272d37, #282f3a, #29313d, #29343f, #2a3642, #293642, #293641, #283641, #26333e, #24313c, #222e39, #202c37);
+}
+//COLORS-VARS-SASS:
+$bg-header:var(--bg-color-header);
+$bg-site-color:var(--bg-site-color);
+$color-white:var(--color-white);
+$color-black-header:var(--color-box-shadow-header);
+$color-blue:var(--color-blue);
+$text-color: var(--txt-color-primary);
+$color-black:var(--color-black);
+$color-txt-primary:var(--txt-color-primary);
+$box-shadow:1px 2px 14px -5px rgba(11, 11, 11, 0.544);
+$color-shadow-list:  var(--color-box-shadow-list);
+$color-loader:var(--color-loader);
+$color-like:var(--color-like);
+$color-unlike:var(--color-unlike);
+$color-black-dark:var(--color-black-dark);
+$color-bgc-card:var(--color-bgc-card);
+$color-bgc-location:var(--color-bgc-location);
+
+// LAYOUT BREAKPOINTS
+$break-xs-mobile: 350px;
+$break-max-mobile: 380px;
+$break-mobile: 400px;
+$break-mobile-min: 450px;
+$break-min-narrow:500px;
+$break-max-narrow: 550px;
+$break-narrow: 750px;
+$break-mid-normal: 850px;
+$break-normal: 950px;
+$break-max-normal: 1050px;
+$break-wide: 1300px;
+
+//FONTS
+$logo-font:'RocknRoll One', sans-serif;
+$font-primary:'Rubik', sans-serif;
+$font-secondary:'Lato', sans-serif;
+
+//LAYOUT
+$grid-container-column:minmax(rem(30px),1fr) minmax(auto,$break-wide) minmax(rem(30px),1fr);

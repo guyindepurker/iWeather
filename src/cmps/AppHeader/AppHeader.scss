@@ -1,0 +1,11 @@
+
+        @import "./src/styles/setup";
+        .app-header {
+                display: grid;
+                grid-template-columns: $grid-container-column;
+                background-color: $bg-header;
+                box-shadow: 0 0 14px 0px $color-black-header;
+                .header-container{
+                        grid-column: 2;
+                }
+        }

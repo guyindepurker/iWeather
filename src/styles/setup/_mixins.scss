@@ -1,0 +1,109 @@
+/* Media queries Breakpoint mixins */
+
+@mixin respond($breakpoint) {
+   //$break-xs-mobile: 350px;
+   @if $breakpoint==xs-mobile {
+    @media only screen and (max-width: $break-xs-mobile) {
+      @content;
+    }
+  }
+  // $mobile: 380px;
+  @if $breakpoint==max-mobile {
+    @media only screen and (max-width: $break-max-mobile) {
+      @content;
+    }
+  }
+  // $mobile: 400px;
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: $break-mobile) {
+      @content;
+    }
+  }
+  // $mobile: 450px;
+  @if $breakpoint==min-mobile {
+    @media only screen and (max-width: $break-mobile-min) {
+      @content;
+    }
+  }
+   // $max-narrow: 500px;
+  @if $breakpoint==min-narrow {
+    @media only screen and (max-width: $break-max-narrow) {
+      @content;
+    }
+  }
+  // $max-narrow: 550px;
+
+  @if $breakpoint==max-narrow {
+    @media only screen and (max-width: $break-max-narrow) {
+      @content;
+    }
+  }
+  // $narrow: 750px;
+
+  @if $breakpoint==narrow {
+    @media only screen and (max-width: $break-narrow) {
+      @content;
+    }
+  }
+    // $break-mid-normal: 850px;
+    @if $breakpoint==mid-normal {
+      @media only screen and (max-width: $break-mid-normal) {
+        @content;
+      }
+    }
+  // $break-normal: 950px;
+
+  @if $breakpoint==normal {
+    @media only screen and (max-width: $break-normal) {
+      @content;
+    }
+  }
+  // $break-max-normal:1050px;
+
+  @if $breakpoint==max-normal {
+    @media only screen and (max-width: $break-max-normal) {
+      @content;
+    }
+  }
+
+  // $break-wide: 1300px;
+  @if $breakpoint==wide {
+    @media only screen and (max-width: $break-wide) {
+      @content;
+    }
+  }
+}
+
+
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Media  Mixins */
+@mixin cardsList {
+  list-style-type: none;
+  gap: rem(30px);
+  box-shadow: 0 0 6px $color-shadow-list;
+  padding: rem(20px) rem(10px);
+  border-radius: rem(30px);
+  margin-top: rem(10px);
+  background-color: $bg-site-color;
+}
+@mixin cardContainer {
+  min-height: 200px;
+  min-width: 250px;
+  padding: rem(20px) rem(15px);
+  color: $color-black;
+  background-image: $color-bgc-card;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  row-gap: rem(15px);
+  border-radius: 5px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  box-shadow: $box-shadow;
+  animation: fadeIn 3s ease-out;
+}
+

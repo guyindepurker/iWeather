@@ -1,0 +1,19 @@
+
+        @import "./src/styles/setup";
+        .toast-msg {
+                @include respond(min-mobile){
+                        max-width: fit-content !important;
+                }
+                .p-toast-message{
+                        font-size: rem(14px);
+                }
+                .p-toast-detail {
+                        margin: 0 !important;
+                    }
+                .p-toast-message-icon {
+                        font-size: 20px !important;
+                    }
+                    .p-toast-message-content {
+                        display: flex;
+                        align-items: center;}
+        }

@@ -1,0 +1,42 @@
+@import "./src/styles/setup";
+
+.favorite-preview {
+        cursor: pointer;
+        @include cardContainer;
+
+        @include respond(narrow) {
+                min-width: 90%;
+        }
+
+        >*:not(:first-child) {
+                font-weight: 100;
+        }
+
+        .favorite {
+                &-title {
+                        font-weight: 500;
+                }
+
+                &-temp {
+                        align-self: center;
+                }
+
+                &-weather-txt {
+                        margin-right: rem(20px);
+                        font-weight: 100;
+                }
+        }
+
+        .pi-star {
+                cursor: pointer;
+                justify-self: end;
+                color: $color-like;
+                font-size: rem(25px);
+                transition: transform .3s ease-out;
+
+                &:hover {
+                        transform: scale(1.2);
+                }
+        }
+
+}

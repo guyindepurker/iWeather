@@ -1,0 +1,55 @@
+@import "./src/styles/setup";
+
+.location-details {
+        background-image: $color-bgc-location;
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: rem(20px);
+        justify-items: center;
+        padding: rem(40px);
+        color: $color-white;
+        border-radius: rem(15px);
+        box-shadow: $box-shadow;
+        animation: fadeIn 2s ease-out;
+
+        >* {
+                text-shadow: -1px 1px 0px $color-black-dark;
+                letter-spacing: 1px;
+        }
+
+        .pi-star {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                font-size: rem(35px);
+                cursor: pointer;
+                transition: all .3s ease-in;
+
+                @include respond(mobile) {
+                        top: unset;
+                        bottom: 10px;
+                }
+
+                &:hover {
+                        transform: scale(1.2);
+
+                }
+        }
+
+        .location-title {
+                @include respond(mobile) {
+                        font-size: rem(20px);
+                }
+        }
+        .location-temp{
+                font-size: rem(30px);
+        }
+
+        .unLike {
+                color: $color-unlike;
+        }
+
+        .like {
+                color: $color-like;
+        }
+}

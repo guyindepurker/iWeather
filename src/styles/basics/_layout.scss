@@ -1,0 +1,19 @@
+.App {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:$grid-container-column;
+    grid-template-rows:70px  1fr; 
+    background-color: $bg-site-color;
+
+    >:first-child{
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+    main {
+      grid-column: 2;
+      padding: 50px 0;
+    }
+  }
+  
+  
+  

@@ -1,0 +1,51 @@
+@import "./src/styles/setup";
+
+.navbar {
+      
+        @include respond(mid-normal) {
+
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $bg-header;
+                z-index: 999;
+                animation: slideInFromRight .5s ease-in;
+                display: none;
+
+                &.open-nav {
+                        display: block;
+                }
+                
+
+                .main-nav {
+                        flex-direction: column;
+                        padding: 0 rem(30px);
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                        gap: rem(20px);
+                     
+                }
+        }
+
+
+        svg {
+                width: 20px;
+                fill: $color-white;
+                color:$color-white;
+                margin:0 5px;
+        }
+        .p-button{
+                min-width: 155px;
+        }
+        
+}
+
+.hamburger-icon {
+        font-size: rem(22px) !important;
+        color: $color-txt-primary;
+        z-index: 1000;
+        margin-left: rem(10px);
+        cursor: pointer;
+}

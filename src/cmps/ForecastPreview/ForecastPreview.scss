@@ -1,0 +1,13 @@
+@import "./src/styles/setup";
+
+.forecast-preview {
+   @include cardContainer;
+   min-width: 200px;
+   .day,.temp-title{
+      font-weight: 400;
+   }
+
+   @include respond(max-narrow){
+      min-width:90%;
+   }
+}

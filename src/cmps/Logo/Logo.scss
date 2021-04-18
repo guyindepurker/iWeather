@@ -1,0 +1,13 @@
+
+        @import "./src/styles/setup";
+        .logo {
+                img{
+                        margin-right: 5px;
+                        max-width: 40px;
+                }
+                font-family: $logo-font;
+                font-size: rem(35px);
+                color:$color-white;
+                letter-spacing: 1px;
+                
+        }

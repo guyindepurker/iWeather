@@ -1,0 +1,13 @@
+@import "./src/styles/setup";
+
+.title-primary {
+        font-size: rem(30px);
+        line-height: 2;
+        margin-bottom: rem(20px);
+        text-align: center;
+        letter-spacing: 1px;
+        color: $color-txt-primary;
+        @include respond(min-narrow) {
+                font-size: rem(25px);
+        }
+}
