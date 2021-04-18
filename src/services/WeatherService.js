@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_KEY = 'GW3hpJE8TehFykMZzQQe0vqeOEdEeExX';
+const API_KEY = 'fGEfGFjUWSQGiMkChU0V7M48l3UalUbb';
 const BASE_URL = 'https://dataservice.accuweather.com/';
 const DEFAULT_CITY_CODE = '215854';
 const DEFAULT_CITY_NAME = 'Tel Aviv';
